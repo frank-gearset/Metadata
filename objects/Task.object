@@ -158,4 +158,6 @@
     </fields><fields>
         <fullName>WhoId</fullName>
         <type>Lookup</type>
+    </fields><fields>
+        <fullName>IsReminderSet</fullName>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><sharingModel>Private</sharingModel></CustomObject>

@@ -958,6 +958,8 @@
         <layout>Scorecard-Scorecard Layout</layout>
     </layoutAssignments><layoutAssignments>
         <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>UserAlt-User Profile Layout</layout>
     </layoutAssignments><objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -1131,6 +1133,9 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities><tabVisibilities>
         <tab>standard-UserProvisioningRequest</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities><tabVisibilities>
+        <tab>standard-Scorecard</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities><userPermissions>
         <enabled>true</enabled>
