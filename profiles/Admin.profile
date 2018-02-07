@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?><Profile xmlns="http://soap.sforce.com/2006/04/metadata"><custom>false</custom><userLicense>Salesforce</userLicense><classAccesses>
         <apexClass>ANewClass</apexClass>
         <enabled>true</enabled>
-    </classAccesses><applicationVisibilities xmlns="http://soap.sforce.com/2006/04/metadata">
+    </classAccesses><classAccesses>
+        <apexClass>ClassTheSecond</apexClass>
+        <enabled>true</enabled>
+    </classAccesses><applicationVisibilities>
         <application>standard__AppLauncher</application>
         <default>false</default>
         <visible>true</visible>
@@ -43,6 +46,14 @@
         <visible>false</visible>
     </applicationVisibilities><applicationVisibilities>
         <application>standard__Sites</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities><applicationVisibilities>
+        <application>standard__LightningSalesConsole</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities><applicationVisibilities>
+        <application>standard__LightningService</application>
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities><fieldPermissions>
@@ -969,6 +980,10 @@
         <layout>UserProvisioningLog-User Provisioning Log Layout</layout>
     </layoutAssignments><layoutAssignments>
         <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments><layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
     </layoutAssignments><recordTypeVisibilities>
         <default>false</default>
         <recordType>Idea.InternalIdeasIdeaRecordType</recordType>
