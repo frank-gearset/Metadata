@@ -128,6 +128,8 @@
     </fields><fields>
         <fullName>UsageEndDate</fullName>
         <trackHistory>false</trackHistory>
+    </fields><fields>
+        <fullName>StockKeepingUnit</fullName>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
         <customTabListAdditionalFields>ASSET.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ASSET.SERIAL_NUMBER</customTabListAdditionalFields>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
+﻿<?xml version="1.0" encoding="utf-8"?><CustomObject xmlns="http://soap.sforce.com/2006/04/metadata"><actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
@@ -9,6 +9,9 @@
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides><actionOverrides>
+        <actionName>Follow</actionName>
         <type>Default</type>
     </actionOverrides><actionOverrides>
         <actionName>List</actionName>
@@ -26,32 +29,45 @@
         <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides><fields>
-        <fullName>Description</fullName>
+        <fullName>AssetId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields><fields>
+        <fullName>FromDate</fullName>
         <trackHistory>false</trackHistory>
     </fields><fields>
-        <fullName>Name</fullName>
-        <trackHistory>false</trackHistory>
-    </fields><fields>
-        <fullName>OwnerId</fullName>
+        <fullName>RelatedAssetId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields><fields>
-        <fullName>IsAlohaSupported</fullName>
+        <fullName>RelationshipType</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Replacement</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Upgrade</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Crossgrade</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields><fields>
-        <fullName>IsLightningSupported</fullName>
-    </fields><fields>
-        <fullName>StartingContext</fullName>
+        <fullName>ToDate</fullName>
+        <trackHistory>false</trackHistory>
     </fields><compactLayoutAssignment>SYSTEM</compactLayoutAssignment><enableFeeds>false</enableFeeds><searchLayouts>
-        <customTabListAdditionalFields>StartingContext</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>StartingContext</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>StartingContext</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>StartingContext</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>Asset</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RelatedAsset</customTabListAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts><sharingModel>Private</sharingModel></CustomObject>
+        <searchResultsAdditionalFields>Asset</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RelatedAsset</searchResultsAdditionalFields>
+    </searchLayouts><sharingModel>ControlledByParent</sharingModel></CustomObject>
